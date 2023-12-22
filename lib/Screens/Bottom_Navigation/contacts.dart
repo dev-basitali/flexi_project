@@ -197,7 +197,7 @@ class _ContactPageState extends State<ContactPage> {
                       ),
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                 ],
               ),
             ),

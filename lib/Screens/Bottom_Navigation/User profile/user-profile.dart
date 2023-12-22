@@ -41,7 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   children: [
                     CircleAvatar(
                       radius: screenHeight * 0.07,
-                      backgroundColor: Color(0xFFCDCDCD),
+                      backgroundColor: const Color(0xFFCDCDCD),
                     ),
                     Image.asset('assets/img 2.png')
                   ],
@@ -66,8 +66,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         child: Container(
                             decoration: BoxDecoration(
                                 color: const Color(0xFF07A2A4),
-                                borderRadius: BorderRadius.circular(45)),
-                            child: Image.asset("assets/iconUser.png")),
+                                borderRadius: BorderRadius.circular(45,),),
+                            child: Image.asset("assets/iconUser.png"),),
                       ),
                       enabled: true,
                       focusColor: const Color(0xFFF9F9F9),
@@ -341,7 +341,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     ),
                                     'Support'),
                                 Icon(
-                                    color: Color(0xFF788292),
+                                    color: const Color(0xFF788292),
                                     size: screenHeight * 0.02,
                                     Icons.arrow_forward_ios)
                               ],

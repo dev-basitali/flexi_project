@@ -17,14 +17,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    double screenwidth = MediaQuery.of(context).size.width;
-    double screenheight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: screenwidth * 0.07,vertical: screenheight * 0.03),
+              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.07,vertical: screenHeight * 0.03),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -32,22 +32,22 @@ class _HomePageState extends State<HomePage> {
                   Text(
                       style: GoogleFonts.montserrat(
                         textStyle: TextStyle(
-                          color: Color(0xFF000000),
-                          fontSize: screenwidth * 0.05,
+                          color: const Color(0xFF000000),
+                          fontSize: screenWidth * 0.05,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       'Jenny Wilson'),
                   IconButton(
                     icon: Icon(
-                      color: Color(0xFF07A2A4),
-                      size: screenwidth * 0.07,
+                      color: const Color(0xFF07A2A4),
+                      size: screenWidth * 0.07,
                       Icons.notifications,
                     ),
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (builder) => Notifications())
+                          MaterialPageRoute(builder: (builder) => const Notifications())
                       );
                     },
                   ),
@@ -55,20 +55,20 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: screenwidth * 0.05),
+              padding: EdgeInsets.only(left: screenWidth * 0.05),
               child: Column(
                 children: [
                   GestureDetector(
                     onDoubleTap: (){
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (builder) => PendingSubs())
+                          MaterialPageRoute(builder: (builder) => const PendingSubs())
                       );
                     },
                     onTap: (){
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (builder) => InactiveSubs())
+                          MaterialPageRoute(builder: (builder) => const InactiveSubs())
                       );
                     },
                     child: ListTile(
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                           style: GoogleFonts.montserrat(
                             textStyle: TextStyle(
                               color: const Color(0xFF000000),
-                              fontSize: screenwidth * 0.03,
+                              fontSize: screenWidth * 0.03,
                               fontWeight: FontWeight.w700,
                             ),
                           ),
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                           style: GoogleFonts.montserrat(
                             textStyle: TextStyle(
                               color: const Color(0xFF000000),
-                              fontSize: screenwidth * 0.03,
+                              fontSize: screenWidth * 0.03,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
                             color: const Color(0xFF000000),
-                            fontSize: screenwidth * 0.03,
+                            fontSize: screenWidth * 0.03,
                             fontWeight: FontWeight.w400,
                           ),
                         ),

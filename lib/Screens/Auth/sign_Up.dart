@@ -160,7 +160,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: DropdownButtonFormField<String>(
                     icon: Padding(
                       padding: EdgeInsets.only(right: screenWidth * 0.06),
-                      child: Icon(Icons.keyboard_arrow_down_outlined),
+                      child: const Icon(Icons.keyboard_arrow_down_outlined),
                     ),
                     value: selectedValue,
                     onChanged: (value) {
@@ -217,7 +217,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: DropdownButtonFormField<String>(
                     icon: Padding(
                       padding: EdgeInsets.only(right: screenWidth * 0.06),
-                      child: Icon(Icons.keyboard_arrow_down_outlined),
+                      child: const Icon(Icons.keyboard_arrow_down_outlined),
                     ),
                     value: selectedValue2,
                     onChanged: (value) {

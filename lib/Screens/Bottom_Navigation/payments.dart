@@ -19,21 +19,21 @@ class _PaymentsState extends State<Payments> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Payment'),
+        title: const Text('Payment'),
       ),
       body: Column(
         children: [
           Container(
             height: screenHeight * 0.25,
             width: screenWidth * 1,
-            color: Color(0xFF090831),
+            color: const Color(0xFF090831),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                     style: GoogleFonts.roboto(
                       textStyle: TextStyle(
-                        color: Color(0xFFFFFFFF),
+                        color: const Color(0xFFFFFFFF),
                         fontSize: screenWidth * 0.06,
                         fontWeight: FontWeight.w400,
                       ),
@@ -42,7 +42,7 @@ class _PaymentsState extends State<Payments> {
                 Text(
                     style: GoogleFonts.roboto(
                       textStyle: TextStyle(
-                        color: Color(0xFFFFFFFF),
+                        color: const Color(0xFFFFFFFF),
                         fontSize: screenWidth * 0.07,
                         fontWeight: FontWeight.w400,
                       ),
@@ -51,7 +51,7 @@ class _PaymentsState extends State<Payments> {
               ],
             ),
           ),
-          Text('Choose subscription'),
+          const Text('Choose subscription'),
           ListTile(
             leading: Radio<String>(
               value: 'Monthly',
@@ -62,8 +62,8 @@ class _PaymentsState extends State<Payments> {
                 });
               },
             ),
-            title: Text('Flexi 2000'),
-            subtitle: Text('2 000 F CFA'),
+            title: const Text('Flexi 2000'),
+            subtitle: const Text('2 000 F CFA'),
           ),
           ListTile(
             leading: Radio<String>(
@@ -75,8 +75,8 @@ class _PaymentsState extends State<Payments> {
                 });
               },
             ),
-            title: Text('Flexi 2000'),
-            subtitle: Text('2 000 F CFA'),
+            title: const Text('Flexi 2000'),
+            subtitle: const Text('2 000 F CFA'),
           ),
         ],
       ),

@@ -30,7 +30,7 @@ class _PendingSubsState extends State<PendingSubs> {
                   Text(
                       style: GoogleFonts.montserrat(
                         textStyle: TextStyle(
-                          color: Color(0xFF000000),
+                          color: const Color(0xFF000000),
                           fontSize: screenWidth * 0.05,
                           fontWeight: FontWeight.w500,
                         ),
@@ -38,7 +38,7 @@ class _PendingSubsState extends State<PendingSubs> {
                       'Jenny Wilson'),
                   IconButton(
                     icon: Icon(
-                      color: Color(0xFF07A2A4),
+                      color: const Color(0xFF07A2A4),
                       size: screenWidth * 0.07,
                       Icons.notifications,
                     ),
@@ -46,7 +46,7 @@ class _PendingSubsState extends State<PendingSubs> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (builder) => Notifications()));
+                              builder: (builder) => const Notifications()));
                     },
                   ),
                 ],
@@ -76,7 +76,7 @@ class _PendingSubsState extends State<PendingSubs> {
                             width: screenWidth * 0.17,
                             height: screenHeight * 0.03,
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFA51D),
+                              color: const Color(0xFFFFA51D),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: Center(

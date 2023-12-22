@@ -15,16 +15,16 @@ class _SupportScreenState extends State<SupportScreen> {
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFFFFF),
+        backgroundColor: const Color(0xFFFFFFFF),
         centerTitle: true,
-        leading: Icon(Icons.arrow_back_ios_new),
-        title: Text('Support'),
+        leading: const Icon(Icons.arrow_back_ios_new),
+        title: const Text('Support'),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
+              const Row(
                 children: [
                   Text('New Request'),
                 ],
@@ -83,25 +83,25 @@ class _SupportScreenState extends State<SupportScreen> {
                                   fontWeight: FontWeight.w500)),
                           enabled: true,
                           focusColor: const Color(0xFFF9F9F9),
-                          focusedBorder: OutlineInputBorder(
+                          focusedBorder: const OutlineInputBorder(
                             // borderRadius: BorderRadius.circular(30),
-                            borderSide: const BorderSide(
+                            borderSide: BorderSide(
                               color: Color(0xFF07A2A4),
                             ),
                           ),
-                          enabledBorder: OutlineInputBorder(
+                          enabledBorder: const OutlineInputBorder(
                             // borderRadius: BorderRadius.circular(30),
-                            borderSide: const BorderSide(
+                            borderSide: BorderSide(
                               color: Color(0xFFE2E2E2),
                             ),
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         bottom: 0,
                         right: 0,
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Text(
                             '0/50',
                             style: TextStyle(
@@ -116,10 +116,10 @@ class _SupportScreenState extends State<SupportScreen> {
                 width: screenWidth * 0.9,
                 height: screenHeight * 0.27,
                 decoration: BoxDecoration(
-                  color: Color(0xFF666666),
+                  color: const Color(0xFF666666),
                   borderRadius: BorderRadius.circular(15)
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text('Image \n'),
