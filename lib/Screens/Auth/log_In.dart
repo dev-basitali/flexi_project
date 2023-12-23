@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Bottom_Navigation/bottom_navigationBar.dart';
+import '../Bottom_Navigation/Bottom_Sheet/bottom_navigationBar.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});

@@ -1,11 +1,11 @@
 
-import 'package:flexi_project/Screens/Bottom_Navigation/payments.dart';
+import 'package:flexi_project/Screens/Bottom_Navigation/Payments/payments.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'Home/home-page.dart';
-import 'User profile/user-profile.dart';
-import 'contacts.dart';
+import '../Home/home-page.dart';
+import '../User profile/user-profile.dart';
+import '../Contacts/contacts.dart';
 
 
 class BottomNavigation extends StatefulWidget {

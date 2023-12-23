@@ -3,7 +3,7 @@ import 'package:flutter_pin_code_fields/flutter_pin_code_fields.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Bottom_Navigation/bottom_navigationBar.dart';
+import '../Bottom_Navigation/Bottom_Sheet/bottom_navigationBar.dart';
 
 class OTP_Verification extends StatefulWidget {
   const OTP_Verification({super.key});
